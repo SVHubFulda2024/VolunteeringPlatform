@@ -292,12 +292,26 @@ body.dark .day-details-card{background:#333;color:#e0e0e0;border-color:#444;}
     padding:10px 10px calc(10px + env(safe-area-inset-bottom));
   }
   .nav-app::-webkit-scrollbar{display:none;}
-  .nav-app button{
-    flex:0 0 auto;
-    font-size:13px;
-    padding:10px 12px;
-    background:#f4f4f4;
-  }
+ .nav-app{
+  justify-content:space-around;
+  gap:4px;
+}
+
+.nav-app button{
+  flex:1;
+  font-size:12px;
+  padding:9px 4px;
+  background:transparent;
+  color:#333;
+  border-radius:10px;
+  min-width:0;
+  font-weight:600;
+}
+
+.nav-app button.active{
+  background:#c63f2c;
+  color:white;
+}
   .nav-app button.active{background:var(--brand);color:white;}
   .section{padding:22px 14px 24px;}
   .hero{padding:28px 16px;border-radius:22px;}
